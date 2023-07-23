@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 /* shared styles */
-*{
+* {
     /* margin: 0px;
     padding: 0px; */
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #FF900E;
     border: none;
     border-radius: 8px;
@@ -20,54 +20,57 @@
 
 /* header styles */
 
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-    
+    align-items: center;
+
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #424242;
 }
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0px auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
@@ -77,11 +80,11 @@ nav li a{
 /* responsive styles */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
     }
 }
@@ -90,11 +93,51 @@ nav li a{
 /* tablet devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
     }
+}
+
+/* main styles */
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 76px;
+    padding-right: 76px;
+}
+
+.teams-title .text-1 {
+    color: #727272;
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+
+.teams-title .text-2 {
+    color: (#131313);
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.teams-title .text-3 {
+    color: #FF900E;
+    font-size: 2.75rem;
+    font-weight: 700;
 }
